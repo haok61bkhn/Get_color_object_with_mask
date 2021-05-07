@@ -1,0 +1,5 @@
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/temp.linux-x86_64-3.8/CMakeFiles/rebuild_cache.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/temp.linux-x86_64-3.8/CMakeFiles/edit_cache.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/temp.linux-x86_64-3.8/CMakeFiles/fast_colorthief_backend.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/temp.linux-x86_64-3.8/pybind11/CMakeFiles/rebuild_cache.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/temp.linux-x86_64-3.8/pybind11/CMakeFiles/edit_cache.dir

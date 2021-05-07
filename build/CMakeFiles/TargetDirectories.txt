@@ -1,0 +1,5 @@
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/CMakeFiles/rebuild_cache.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/CMakeFiles/edit_cache.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/CMakeFiles/fast_colorthief_backend.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/pybind11/CMakeFiles/rebuild_cache.dir
+/home/haobk/Desktop/code/fast_color/fast-colorthief-master/build/pybind11/CMakeFiles/edit_cache.dir

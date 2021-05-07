@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC  -O0 -ggdb -O3 -DNDEBUG -flto -shared  -o ../lib.linux-x86_64-3.8/fast_colorthief_backend.cpython-38-x86_64-linux-gnu.so CMakeFiles/fast_colorthief_backend.dir/cpp/fast_colorthief_backend.cpp.o 

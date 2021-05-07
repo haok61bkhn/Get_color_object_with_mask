@@ -1,0 +1,11 @@
+README.md
+fast_colorthief.py
+setup.cfg
+setup.py
+version.py
+fast_colorthief.egg-info/PKG-INFO
+fast_colorthief.egg-info/SOURCES.txt
+fast_colorthief.egg-info/dependency_links.txt
+fast_colorthief.egg-info/not-zip-safe
+fast_colorthief.egg-info/requires.txt
+fast_colorthief.egg-info/top_level.txt
