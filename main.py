@@ -4,6 +4,7 @@ import numpy as np
 import version
 import cv2
 from PIL import Image, ImageDraw
+import colorsys
 
 __version__ = version.__version__
 
@@ -21,7 +22,7 @@ class Color_object:
         self.color_count = color_count
         self.quality = quality
     
-    def get_color(self,image,mask=None,output="rgb"):#image cv2 ,output ="rgb"/"hex","int"
+    def get_color(self,image,mask=None,output="hsl"):#image cv2 ,output ="rgb"/"hex","int"
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image = np.array(image).astype(np.uint8)
         if(mask is None):
@@ -33,17 +34,24 @@ class Color_object:
             results=['#%02x%02x%02x' % x for x in results]
         elif(output=="int"):
             results=[int('0x%02x%02x%02x' % x,0) for x in results]
+        elif(output=="hsl"):
+            results=[colorsys.rgb_to_hls(x[0]/255.0,x[1]/255.0,x[2]/255) for x in results]
+            results=[(int(x[0]*360),int(x[1]*100),int(x[2]*100)) for x in results]
         return results
+
 if __name__=="__main__":
     cl_object= Color_object()
-    img=cv2.imread("b.png")
-    polygon=[(14, 2), (214, 14), (222, 356), (13, 360), (11, 3)]
+    img=cv2.imread("images/2.png")
+    polygon=[(22, 123), (127, 73), (229, 121), (227, 152), (198, 191), (105, 196), (74, 197), (46, 176), (26, 148), (20, 126)]
     height,width=img.shape[:2]
     bg = Image.new('L', (width,height), 0)
     ImageDraw.Draw(bg).polygon(polygon, outline=1, fill=255)
     mask = np.array(bg)
-    res=cl_object.get_color(img,mask,"int")
+    res=cl_object.get_color(img,mask,"hsl")
     print(res)
 
     
+
+#9873577
+#7908818
 
